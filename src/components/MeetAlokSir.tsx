@@ -50,7 +50,7 @@ export default function MeetAlokSir() {
 
             <div className="relative w-full max-w-[380px] aspect-[4/5] rounded-2xl overflow-hidden border-2 border-accent/40 shadow-2xl z-10 bg-primary/80">
               <Image
-                src="/alok_sir_profile.png"
+                src="/aloksir.jpg"
                 alt="Alok Sir portrait at Shree Ram Classes"
                 fill
                 priority

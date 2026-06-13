@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Award, BookOpen, GraduationCap, MapPin } from "lucide-react";
 
 export default function About() {
@@ -31,32 +32,21 @@ export default function About() {
             viewport={{ once: true, margin: "-100px" }}
             className="lg:col-span-5 relative flex justify-center"
           >
-            {/* Elegant educational vector placeholder using pure SVG */}
-            <div className="relative w-full max-w-[400px] aspect-[4/3] bg-gradient-to-tr from-primary/10 to-secondary/20 rounded-2xl border border-primary/20 p-8 shadow-xl flex items-center justify-center">
-              <svg className="w-full h-full text-primary" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {/* Classroom Board */}
-                <rect x="20" y="20" width="160" height="90" rx="6" fill="#0B3C5D" />
-                <rect x="25" y="25" width="150" height="80" rx="4" fill="#133E87" />
-                {/* Map Grid */}
-                <path d="M40 65 C 60 50, 100 80, 120 40 C 140 60, 150 30, 160 50" stroke="#F5A623" strokeWidth="2" strokeLinecap="round" />
-                <circle cx="120" cy="40" r="3" fill="#ffffff" />
-                <circle cx="40" cy="65" r="3" fill="#ffffff" />
-                <circle cx="160" cy="50" r="3" fill="#ffffff" />
-                {/* Text Lines on board */}
-                <rect x="35" y="35" width="50" height="4" rx="2" fill="#ffffff" fillOpacity="0.8" />
-                <rect x="35" y="43" width="70" height="4" rx="2" fill="#ffffff" fillOpacity="0.5" />
-                {/* Board Stand */}
-                <path d="M80 110 L70 140 M120 110 L130 140 M60 140 L140 140" stroke="#0B3C5D" strokeWidth="4" strokeLinecap="round" />
-                {/* Book & Cap icon overlapping */}
-                <g transform="translate(145, 95)">
-                  <circle cx="20" cy="20" r="22" fill="#F5A623" />
-                  <path d="M12 15 L20 11 L28 15 L20 19 Z" fill="#ffffff" />
-                  <path d="M16 17 L16 23 C 16 25, 24 25, 24 23 L24 17" fill="#ffffff" />
-                  <path d="M28 15 L28 21" stroke="#ffffff" strokeWidth="1.5" />
-                </g>
-              </svg>
+            {/* Decorative background glow */}
+            <div className="absolute inset-0 bg-accent/20 rounded-2xl blur-xl transform rotate-3 scale-95 z-0" />
+            
+            <div className="relative w-full max-w-[400px] aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border border-primary/20 z-10 bg-primary/10 flex items-center justify-center">
+              <Image
+                src="/office.jpg"
+                alt="Shree Ram Classes classroom environment and office"
+                fill
+                className="object-cover transition-transform duration-500 hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 400px"
+                unoptimized
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent pointer-events-none" />
 
-              <div className="absolute -bottom-6 -right-6 bg-accent border border-accent/20 px-6 py-4 rounded-xl shadow-lg text-center hidden sm:block">
+              <div className="absolute -bottom-6 -right-6 bg-accent border border-accent/20 px-6 py-4 rounded-xl shadow-lg text-center hidden sm:block z-20">
                 <span className="block font-montserrat font-black text-2xl text-primary">#1</span>
                 <span className="block font-inter font-bold text-xs text-primary/80 uppercase tracking-widest">Arts Choice in Patna</span>
               </div>

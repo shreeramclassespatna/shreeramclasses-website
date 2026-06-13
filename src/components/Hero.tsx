@@ -149,7 +149,7 @@ export default function Hero() {
             
             <div className="relative w-full max-w-[450px] aspect-square rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 z-10 bg-primary/40 flex items-center justify-center">
               <Image
-                src="/alok_sir_teaching.png"
+                src="/class.jpg"
                 alt="Alok Sir teaching Arts class at Shree Ram Classes Patna"
                 fill
                 priority

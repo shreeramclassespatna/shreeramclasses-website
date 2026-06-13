@@ -4,6 +4,7 @@
   --background: #FAFAFA;
   --foreground: #1F2937;
   --primary: #0B3C5D;
+  --primary-hover: #07253a;
   --secondary: #133E87;
   --accent: #F5A623;
   --success: #16A34A;
@@ -11,6 +12,7 @@
 
 @theme {
   --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
   --color-success: var(--success);
