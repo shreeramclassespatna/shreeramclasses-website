@@ -34,7 +34,7 @@ export default function About() {
           >
             <div className="relative w-full max-w-[280px] sm:max-w-[400px] aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-primary/15 z-10 bg-primary/10">
               <Image
-                src="/office.jpg"
+                src="/ranker-1.jpeg"
                 alt="Shree Ram Classes classroom environment and office"
                 fill
                 className="object-cover"
@@ -43,11 +43,11 @@ export default function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent pointer-events-none" />
 
-              <div className="absolute bottom-3 right-3 sm:-bottom-5 sm:-right-5 bg-accent border border-accent/20 px-4 py-2.5 sm:px-6 sm:py-4 rounded-xl shadow-lg text-center z-20">
+            </div>
+              <div className="absolute bottom-3 right-3 sm:-bottom-5 sm:-right-5 bg-accent border border-accent/20 px-4 py-2.5 sm:px-2 sm:py-2 rounded-xl shadow-lg text-center z-20">
                 <span className="block font-montserrat font-black text-lg sm:text-2xl text-primary">#1</span>
                 <span className="block font-inter font-bold text-xxs sm:text-xs text-primary/80 uppercase tracking-widest">Arts in Patna</span>
               </div>
-            </div>
           </motion.div>
 
           {/* Right Column - Narrative Content */}
@@ -76,7 +76,7 @@ export default function About() {
                 </div>
                 <div>
                   <h4 className="font-montserrat font-bold text-gray-800 text-xs sm:text-sm">Targeted Curriculum</h4>
-                  <p className="font-inter text-xxs sm:text-xs text-gray-500 mt-0.5">Bihar Board &amp; CBSE aligned notes &amp; tests.</p>
+                  <p className="font-inter text-xxs sm:text-xs text-gray-500 mt-0.5">11th &amp; 12th Arts Curriculum + CUET</p>
                 </div>
               </div>
               <div className="flex items-start space-x-2.5">
@@ -93,7 +93,7 @@ export default function About() {
                   <BookOpen className="h-4 w-4 sm:h-5 sm:w-5" />
                 </div>
                 <div>
-                  <h4 className="font-montserrat font-bold text-gray-800 text-xs sm:text-sm">Mock Tests</h4>
+                  <h4 className="font-montserrat font-bold text-gray-800 text-xs sm:text-sm">Chapter Wise Tests</h4>
                   <p className="font-inter text-xxs sm:text-xs text-gray-500 mt-0.5">Weekly evaluations &amp; revision cycles.</p>
                 </div>
               </div>
@@ -103,7 +103,7 @@ export default function About() {
                 </div>
                 <div>
                   <h4 className="font-montserrat font-bold text-gray-800 text-xs sm:text-sm">Central Location</h4>
-                  <p className="font-inter text-xxs sm:text-xs text-gray-500 mt-0.5">Mahendru, Ashok Rajpath, Patna.</p>
+                  <p className="font-inter text-xxs sm:text-xs text-gray-500 mt-0.5">Mahendru Post office, Ashok Rajpath, Patna-6 .</p>
                 </div>
               </div>
             </div>

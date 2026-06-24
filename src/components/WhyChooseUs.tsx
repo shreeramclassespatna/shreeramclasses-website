@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { 
-  Tv, Users, FileText, IndianRupee, ClipboardList, Compass, HelpCircle, Target 
+  Tv, Users, FileText, CheckSquare, ClipboardList, Notebook, Pencil, Target 
 } from "lucide-react";
 
 export default function WhyChooseUs() {
@@ -19,33 +19,33 @@ export default function WhyChooseUs() {
     },
     {
       icon: FileText,
-      title: "Exam Focused Notes",
+      title: "Subject Wise Notes",
       description: "Handwritten summaries, maps, diagrams, and target board solutions."
     },
     {
-      icon: IndianRupee,
-      title: "Affordable Fees",
+      icon: CheckSquare,
+      title: "Full NCERT Coverage",
       description: "Premium education made accessible for BSEB & CBSE students."
     },
     {
       icon: ClipboardList,
-      title: "Regular Mock Tests",
-      description: "Weekly mock tests graded on strict board marking patterns."
+      title: "Chapter Wise Tests",
+      description: "Weekly tests graded on strict board marking patterns."
     },
     {
-      icon: Compass,
-      title: "Personal Mentoring",
-      description: "Direct guidance from Alok Sir to resolve study blocks."
+      icon: Notebook,
+      title: "2009-Present Questions Bank",
+        description: " A collection of over 20 years of previous year questions."
     },
     {
-      icon: HelpCircle,
-      title: "Daily Doubt Solving",
-      description: "Daily open doubt-solving slots to clear concepts instantly."
+      icon: Pencil,
+      title: "MOCK Paper practice",
+      description: "Timed mock papers with detailed solutions and marking schemes."
     },
     {
       icon: Target,
-      title: "Board Exam Strategy",
-      description: "Paper writing blueprints, time management formulas, and PYQs."
+      title: "Free Prep for CUET",
+      description: "CUET preparation integrated into the curriculum for competitive edge."
     }
   ];
 

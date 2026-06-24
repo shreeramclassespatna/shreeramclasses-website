@@ -24,7 +24,7 @@ export default function MeetAlokSir() {
   const credentials = [
     { text: "6 Years of Professional Humanities Mentorship" },
     { text: "1st Division Guaranteed Mission for Every Student" },
-    { text: "Expertise in History, Geography & Political Science" },
+    { text: "Expertise in Political Science, History, Geography & Economics" },
     { text: "Pioneered smartboard answer visualization in Patna" }
   ];
 
@@ -62,7 +62,8 @@ export default function MeetAlokSir() {
               <div className="absolute bottom-4 left-4 right-4 bg-primary/95 backdrop-blur-sm border border-accent/20 px-3 py-2.5 rounded-xl flex items-center space-x-2.5 shadow-md">
                 <Trophy className="h-4.5 w-4.5 text-accent flex-shrink-0" />
                 <div>
-                  <span className="block font-montserrat font-extrabold text-white text-xs">Alok Kumar Singh</span>
+                  <span className="block font-montserrat font-extrabold text-white text-xs">Alok Kumar Singh </span>
+                  <span className="block font-montserrat text-white text-xs">(6+ Years of Experience)</span>
                   <span className="block font-inter text-[10px] text-accent uppercase font-bold tracking-widest">Director &amp; Head Mentor</span>
                 </div>
               </div>
@@ -86,7 +87,7 @@ export default function MeetAlokSir() {
               variants={itemVariants}
               className="font-montserrat font-black text-2xl sm:text-3xl leading-tight mb-3"
             >
-              Learn from Alok Kumar Singh
+              Learn from Alok Kumar Singh 
             </motion.h2>
 
             <motion.p 

@@ -19,6 +19,16 @@ const previewImages: PreviewImage[] = [
     label: "Achievements",
   },
   {
+    src: "/toppers_banner-2.jpeg",
+    title: "Board Toppers Banner",
+    label: "Achievements",
+  },
+  {
+    src: "/toppers_banner-3.jpeg",
+    title: "Board Toppers Banner",
+    label: "Achievements",
+  },
+  {
     src: "/classes-ongoing.jpeg",
     title: "Smartboard Session",
     label: "Classroom",
@@ -54,7 +64,7 @@ function GalleryCard({ image, index }: { image: PreviewImage; index: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.3, delay: index * 0.06 }}
-      className={`group relative rounded-xl overflow-hidden shadow-sm border border-gray-200 cursor-pointer ${index === 0 ? "col-span-2 row-span-2 aspect-[4/3] md:aspect-auto" : "aspect-[4/3]"
+      className={`group relative rounded-xl overflow-hidden shadow-sm border border-gray-200 cursor-pointer ${index === 0 ? "col-span-2 row-span-2 aspect-[16/10] md:aspect-auto" : "aspect-[16/10]"
         }`}
       onClick={() => setTapped((prev) => !prev)}
     >
@@ -102,7 +112,7 @@ export default function GalleryPreview() {
         </div>
 
         {/* Bento-style grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[140px] sm:auto-rows-[170px] md:auto-rows-[190px]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2 auto-rows-[140px] sm:auto-rows-[170px] md:auto-rows-[190px]">
           {previewImages.map((image, idx) => (
             <GalleryCard key={idx} image={image} index={idx} />
           ))}
@@ -113,10 +123,11 @@ export default function GalleryPreview() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: previewImages.length * 0.06 }}
+            className="group relative rounded-xl overflow-hidden shadow-sm border border-gray-200 cursor-pointer aspect-[16/10] md:aspect-auto"
           >
             <Link
               href="/gallery"
-              className="group relative rounded-xl overflow-hidden border border-primary/15 aspect-[4/3] flex flex-col items-center justify-center bg-gradient-to-br from-primary to-secondary text-white hover:shadow-lg transition-all duration-300 h-full"
+              className="group relative rounded-xl overflow-hidden border border-primary/15 aspect-[16/10] flex flex-col items-center justify-center bg-gradient-to-br from-primary to-secondary text-white hover:shadow-lg transition-all duration-300 cursor-pointer h-full w-full"
             >
 
               <span className="font-montserrat font-black text-sm sm:text-base">19+ Photos</span>

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, Users, ShieldCheck, GraduationCap } from "lucide-react";
+import { Phone, Users, ShieldCheck, GraduationCap, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -65,7 +65,7 @@ export default function Hero() {
             {/* Accent Topper */}
             <motion.div variants={itemVariants} className="inline-flex items-center space-x-2 bg-accent/10 border border-accent/30 text-accent px-2.5 py-1 rounded-full w-fit mb-3">
               <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-              <span className="font-inter font-bold text-[10px] uppercase tracking-wider">Admissions Open 2026-27</span>
+              <span className="font-inter font-bold text-[10px] uppercase tracking-wider">Admissions Open</span>
             </motion.div>
 
             {/* Main Headline (Max 2 lines) */}
@@ -73,7 +73,7 @@ export default function Hero() {
               variants={itemVariants}
               className="font-montserrat font-black text-2xl sm:text-4xl lg:text-5xl text-white leading-tight tracking-tight mb-3"
             >
-              Patna&apos;s Leader in <span className="text-accent underline decoration-accent/30 underline-offset-4 sm:underline-offset-6">Arts Education</span>
+              Best ARTS choaching <span className="text-accent underline decoration-accent/30 underline-offset-4 sm:underline-offset-6">in Patna</span>
             </motion.h1>
 
             {/* Subheadline */}
@@ -81,7 +81,7 @@ export default function Hero() {
               variants={itemVariants}
               className="font-inter font-medium text-sm sm:text-base text-gray-200 leading-relaxed mb-5 max-w-xl"
             >
-              Join board aspirants learning directly from Alok Kumar Singh through visual classrooms, expert notes, and result-oriented mentoring.
+              Join ARTS students learning directly from Alok Sir.we offer Smart classroom visual setups,cover NCERT books and result oriented teaching & mentoring.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -121,10 +121,10 @@ export default function Hero() {
               </div>
               <div className="flex items-center space-x-2">
                 <div className="bg-accent/10 p-1.5 rounded-lg flex-shrink-0 text-accent">
-                  <Users className="h-4 w-4" />
+                  <Calendar className="h-4 w-4" />
                 </div>
                 <div>
-                  <span className="block font-montserrat font-bold text-xs sm:text-sm text-white">6 Yrs Experience</span>
+                  <span className="block font-montserrat font-bold text-xs sm:text-sm text-white">Established in 2021</span>
                   <span className="block font-inter text-[10px] text-gray-400">Led by Alok Kumar Singh</span>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export default function Hero() {
 
             <div className="relative w-full max-w-[380px] aspect-square rounded-2xl overflow-hidden shadow-xl border-2 border-white/10 z-10 bg-primary/40 flex items-center justify-center">
               <Image
-                src="/classes-ongoing.jpeg"
+                src="/classes-ongoing-2.jpeg"
                 alt="Alok Sir teaching Arts class at Shree Ram Classes Patna"
                 fill
                 priority

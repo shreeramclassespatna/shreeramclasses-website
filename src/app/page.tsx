@@ -9,6 +9,8 @@ import FAQ from "@/components/FAQ";
 import AdmissionCTASection from "@/components/AdmissionCTASection";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import NewsTicker from "@/components/NewsTicker";
+import YoutubeSection from "@/components/Youtube";
 
 export default function Home() {
   return (
@@ -19,10 +21,12 @@ export default function Home() {
       <main className="flex-grow">
         {/* Condensed Homepage Sections */}
         <Hero />
+        <NewsTicker />
         <WhyChooseUs />
         <MeetAlokSir />
         <Courses />
         <GalleryPreview />
+        <YoutubeSection />
         <PageOverviews />
         <FAQ />
         <AdmissionCTASection />

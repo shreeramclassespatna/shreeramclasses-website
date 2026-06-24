@@ -54,7 +54,7 @@ export default function FAQ() {
     },
     {
       question: "Who teaches the classes?",
-      answer: "All primary core lectures for History, Geography, Political Science, Economics, and Sociology are taken directly by Alok Sir. We also have dedicated coordinators for regular mock test correction, doubts resolution, and counseling."
+      answer: "All primary core lectures for History, Geography, Political Science, Economics, and Sociology are taken directly by Alok Sir and team. We also have dedicated coordinators for regular mock test correction, doubts resolution, and counseling."
     },
     {
       question: "Are demo classes available?",
@@ -66,7 +66,7 @@ export default function FAQ() {
     },
     {
       question: "What subjects are taught?",
-      answer: "We teach all primary Humanities / Arts subjects: History, Geography (with map work), Political Science (Civics), Economics, and Sociology. We focus heavily on syllabus mastery and high-scoring techniques."
+      answer: "We teach all ARTS subjects: History, Geography (with map work), Political Science (Civics), Economics, and Sociology + CUET preparation. We focus heavily on syllabus mastery and high-scoring techniques."
     },
     {
       question: "How can I enroll?",

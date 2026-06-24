@@ -7,57 +7,75 @@ export default function Courses() {
   const courses = [
     {
       title: "11th Arts Foundation",
-      duration: "2 Years Course",
-      timings: "07:00 AM - 09:00 AM",
+      duration: "1 Years Course",
       fees: {
         total: "₹5000 Total",
         monthly: "₹500 Monthly",
       },
       badge: "Foundation Batch",
       features: [
-        "Comprehensive History Foundations",
-        "Polity, Geography & Sociology basics",
-        "Visual smartboard answer mapping",
-        "Handwritten notes & chapter summary PDFs",
-        "Monthly evaluations & strategy sessions"
+        "History",
+        "Geography",
+        "Political Science",
+        "Economics",
+        "Sociology",
+        "Psychology",
+        "Hindi & English",
+        "CUET Preparation (Integrated)",
+        "Grammar & Writing Skills",
+        "Weekly worksheets & tests",
+        "Handwritten notes & diagrams"
       ],
       color: "border-primary/20 hover:border-primary",
       bgAccent: "bg-primary/5 text-primary",
     },
     {
       title: "12th Arts Board Special",
-      duration: "2 Years Course",
-      timings: "09:00 AM - 11:00 AM OR 05:00 PM - 07:00 PM",
+      duration: "1 Years Course",
+      
       fees: {
         total: "₹7000 Total",
         monthly: "₹600 Monthly",
       },
       badge: "Board Exam Focused",
       features: [
-        "Rigorous themes in Indian History & Geography",
-        "Politics in India & Contemporary world politics",
-        "Weekly mock board answer writing tests",
-        "Handwritten board-specific notes with diagrams",
-        "Model papers & previous years' question solving"
+     "History",
+        "Geography",
+        "Political Science",
+        "Economics",
+        "Sociology",
+        "Psychology",
+        "Hindi & English",
+        "Grammar & Writing Skills",
+        "CUET Preparation (Integrated)",
+        "Weekly worksheets & tests",
+        "Handwritten notes & diagrams"
+
       ],
       color: "border-accent/40 hover:border-accent shadow-md",
       bgAccent: "bg-accent/10 text-accent border border-accent/20",
     },
     {
       title: "CUET Preparation (Integrated)",
-      duration: "2 Years Program",
-      timings: "Special Weekend Batches",
+      duration: "",
+
       fees: {
-        total: "Integrated with Boards",
-        monthly: "No Extra Fees",
+        total: "Integrated with Boards (Free)",
+        monthly: "Free with Board Course",
       },
       badge: "University Entrance",
       features: [
-        "Humanities Domain prep (History, Geography, Polity)",
-        "NTA-pattern MCQ mock tests on computers",
-        "General test preparation (Aptitude & Reasoning)",
-        "Current affairs briefings & PDF handouts",
-        "Personal guidance for Central University admission"
+         "History",
+        "Geography",
+        "Political Science",
+        "Economics",
+        "Sociology",
+        "Psychology",
+        "Hindi & English",
+        "Grammar & Writing Skills",
+        "Weekly worksheets & tests",
+        "Handwritten notes & diagrams"
+
       ],
       color: "border-secondary/20 hover:border-secondary",
       bgAccent: "bg-secondary/5 text-secondary",
@@ -121,14 +139,6 @@ export default function Courses() {
                   {course.title}
                 </h3>
 
-                {/* Batch Timings (Highly Visible) */}
-                <div className="bg-white border border-gray-150 p-3 rounded-xl mb-4 flex items-start space-x-2.5">
-                  <Clock className="h-4.5 w-4.5 text-accent flex-shrink-0 mt-0.5" />
-                  <div>
-                    <span className="block font-montserrat font-bold text-[10px] text-gray-400 uppercase tracking-wider">Batch Timings</span>
-                    <span className="block font-inter font-extrabold text-xs text-primary mt-0.5">{course.timings}</span>
-                  </div>
-                </div>
 
                 {/* Pricing / Fees Cards */}
                 <div className="bg-primary/95 text-white p-4 rounded-xl mb-6 shadow-sm flex items-center justify-between">

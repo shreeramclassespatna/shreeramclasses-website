@@ -61,15 +61,15 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2.5 group">
-            <div className="bg-accent/10 p-1.5 rounded-full border border-accent/20 group-hover:bg-accent/20 transition-all duration-205">
-              <BookOpen className="h-5 w-5 text-accent" />
+            <div className="white/70 rounded-full border border-accent/20 group-hover:bg-accent/20 transition-all duration-205">
+              <img src="logo.png" alt="Shree Ram Classes Logo" className="h-12 w-12 object-contain" />
             </div>
             <div>
               <span className="font-montserrat font-black text-base tracking-tight text-white block leading-none">
-                SHREE RAM
+                SHREE RAM CLASSES PATNA
               </span>
               <span className="font-inter font-bold text-[10px] text-accent tracking-widest uppercase block leading-none mt-0.5">
-                CLASSES PATNA
+                
               </span>
             </div>
           </Link>
