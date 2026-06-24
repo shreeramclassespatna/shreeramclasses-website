@@ -14,7 +14,7 @@ interface PreviewImage {
 
 const previewImages: PreviewImage[] = [
   {
-    src: "/toppers_banner.jpeg",
+    src: "/toppers_banner-1.jpeg",
     title: "Board Toppers Banner",
     label: "Achievements",
   },
@@ -29,7 +29,7 @@ const previewImages: PreviewImage[] = [
     label: "Achievements",
   },
   {
-    src: "/classes-ongoing.jpeg",
+    src: "/classes-ongoing-1.jpeg",
     title: "Smartboard Session",
     label: "Classroom",
   },
@@ -39,7 +39,7 @@ const previewImages: PreviewImage[] = [
     label: "Student Batches",
   },
   {
-    src: "/celebration.jpeg",
+    src: "/celebration-1.jpeg",
     title: "Topper Celebration",
     label: "Events",
   },
