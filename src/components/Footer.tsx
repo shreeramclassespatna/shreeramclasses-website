@@ -99,15 +99,24 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom copyright block */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-[10px] font-inter font-medium text-gray-400 text-center gap-3">
-          <p>&copy; {currentYear} Shree Ram Classes Patna. Estd. 2021. All rights reserved.</p>
-          <div className="flex space-x-3">
-            <span>Director: Alok Kumar Singh</span>
-            <span>|</span>
-            <span>Patna, Bihar</span>
-          </div>
-        </div>
+  {/* Bottom copyright block */}
+<div className="mt-8 border-t border-gray-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-inter font-normal text-gray-500">
+  <p>
+    &copy; {currentYear} Shree Ram Classes Patna. Estd. 2021. All rights reserved.
+  </p>
+  
+  <p className="flex items-center gap-1.5">
+    <span className="text-gray-400">Powered by</span>
+    <a 
+      href="https://srstudioindia.vercel.app" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="text-accent hover:underline font-medium transition-all"
+    >
+      SR Studio
+    </a>
+  </p>
+</div>
 
       </div>
     </footer>
