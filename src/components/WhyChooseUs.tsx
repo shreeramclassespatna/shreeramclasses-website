@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
     },
     {
       icon: CheckSquare,
-      title: "Full NCERT Coverage",
+      title: "Fully NCERT Coverage",
       description: "Premium education made accessible for BSEB & CBSE students."
     },
     {
@@ -34,12 +34,12 @@ export default function WhyChooseUs() {
     },
     {
       icon: Notebook,
-      title: "2009-Present Questions Bank",
+      title: "2009-current year Questions Bank",
         description: " A collection of over 20 years of previous year questions."
     },
     {
       icon: Pencil,
-      title: "MOCK Paper practice",
+      title: "Model Paper Tests",
       description: "Timed mock papers with detailed solutions and marking schemes."
     },
     {

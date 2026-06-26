@@ -8,7 +8,7 @@ import Image from "next/image";
 interface GalleryItem {
   id: number;
   title: string;
-  category: "classroom" | "batches" | "achievements" | "events";
+  category: "classroom" | "batches" | "achievements" | "events" | "banners";
   imageSrc: string;
   description: string;
 }
@@ -50,6 +50,13 @@ const galleryItems: GalleryItem[] = [
     description: "One of our top rankers celebrating board exam success."
   },
   {
+    id: 5,
+    title: "Class 12 Rank Holder",
+    category: "achievements",
+    imageSrc: "/ranker-3.jpeg",
+    description: "One of our top rankers celebrating board exam success."
+  },
+  {
     id: 6,
     title: "Achiever Felicitation - 1",
     category: "achievements",
@@ -85,6 +92,20 @@ const galleryItems: GalleryItem[] = [
     description: "Rewarding effort and top marks in Geography and History papers."
   },
   {
+    id: 10,
+    title: "Achiever Felicitation - 5",
+    category: "achievements",
+    imageSrc: "/achievers-6.jpeg",
+    description: "Rewarding effort and top marks in Geography and History papers."
+  },
+  {
+    id: 10,
+    title: "Achiever Felicitation - 5",
+    category: "achievements",
+    imageSrc: "/achievers-7.jpeg",
+    description: "Rewarding effort and top marks in Geography and History papers."
+  },
+  {
     id: 11,
     title: "Active Smartboard Session",
     category: "classroom",
@@ -96,6 +117,13 @@ const galleryItems: GalleryItem[] = [
     title: "Ongoing Classroom Lecture",
     category: "classroom",
     imageSrc: "/classes-ongoing-2.jpeg",
+    description: "Focused classroom study environment in Ashok Rajpath, Patna."
+  },
+  {
+    id: 12,
+    title: "Ongoing Classroom Lecture",
+    category: "classroom",
+    imageSrc: "/classes-ongoing-3.jpeg",
     description: "Focused classroom study environment in Ashok Rajpath, Patna."
   },
   {
@@ -181,6 +209,27 @@ const galleryItems: GalleryItem[] = [
     category: "events",
     imageSrc: "/notes-distribution-2.jpeg",
     description: "Distributing printed chapter notes and board maps to the batch."
+  },
+  {
+    id: 24,
+    title: "Banner & Poster Display",
+    category: "banners",
+    imageSrc: "/banner-1.jpeg",
+    description: "Promotional banner of Shree Ram Classes displayed at Ashok Rajpath, Patna."
+  },
+  {
+    id: 24,
+    title: "Banner & Poster Display",
+    category: "banners",
+    imageSrc: "/banner-2.jpeg",
+    description: "Promotional banner of Shree Ram Classes displayed at Ashok Rajpath, Patna."
+  },
+  {
+    id: 24,
+    title: "Banner & Poster Display",
+    category: "banners",
+    imageSrc: "/banner-3.jpeg",
+    description: "Promotional banner of Shree Ram Classes displayed at Ashok Rajpath, Patna."
   }
 ];
 
@@ -189,7 +238,8 @@ const categories = [
   { value: "classroom", label: "Classrooms & Office" },
   { value: "batches", label: "Student Batches" },
   { value: "achievements", label: "Achievements & Toppers" },
-  { value: "events", label: "Events & Distribution" }
+  { value: "events", label: "Events & Distribution" },
+  { value: "banners", label: "Banners & Posters" }
 ];
 
 function GalleryCard({
