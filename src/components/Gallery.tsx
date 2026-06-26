@@ -50,182 +50,176 @@ const galleryItems: GalleryItem[] = [
     description: "One of our top rankers celebrating board exam success."
   },
   {
-    id: 5,
+    id: 6,
     title: "Class 12 Rank Holder",
     category: "achievements",
     imageSrc: "/ranker-3.jpeg",
     description: "One of our top rankers celebrating board exam success."
   },
   {
-    id: 6,
+    id: 7,
     title: "Achiever Felicitation - 1",
     category: "achievements",
     imageSrc: "/achievers-1.jpeg",
     description: "Alok Sir congratulating student achievers with trophies and gifts."
   },
   {
-    id: 7,
+    id: 8,
     title: "Achiever Felicitation - 2",
     category: "achievements",
     imageSrc: "/achievers-2.jpeg",
     description: "Celebrating excellent percentages scored by our Humanities batch."
   },
   {
-    id: 8,
+    id: 9,
     title: "Achiever Felicitation - 3",
     category: "achievements",
     imageSrc: "/achievers-3.jpeg",
     description: "Trophy distribution for outstanding academic consistency."
   },
   {
-    id: 9,
+    id: 10,
     title: "Achiever Felicitation - 4",
     category: "achievements",
     imageSrc: "/achievers-4.jpeg",
     description: "Proud parents and students celebrating at Shree Ram Classes."
   },
   {
-    id: 10,
+    id: 11,
     title: "Achiever Felicitation - 5",
     category: "achievements",
     imageSrc: "/achievers-5.jpeg",
     description: "Rewarding effort and top marks in Geography and History papers."
   },
   {
-    id: 10,
-    title: "Achiever Felicitation - 5",
+    id: 12,
+    title: "Achiever Felicitation - 6",
     category: "achievements",
     imageSrc: "/achievers-6.jpeg",
     description: "Rewarding effort and top marks in Geography and History papers."
   },
   {
-    id: 10,
-    title: "Achiever Felicitation - 5",
+    id: 13,
+    title: "Achiever Felicitation - 7",
     category: "achievements",
     imageSrc: "/achievers-7.jpeg",
     description: "Rewarding effort and top marks in Geography and History papers."
   },
   {
-    id: 11,
+    id: 14,
     title: "Active Smartboard Session",
     category: "classroom",
     imageSrc: "/classes-ongoing-1.jpeg",
     description: "Students attending interactive map-making and lecture slides by Alok Sir."
   },
   {
-    id: 12,
+    id: 15,
     title: "Ongoing Classroom Lecture",
     category: "classroom",
     imageSrc: "/classes-ongoing-2.jpeg",
     description: "Focused classroom study environment in Ashok Rajpath, Patna."
   },
   {
-    id: 12,
+    id: 16,
     title: "Ongoing Classroom Lecture",
     category: "classroom",
     imageSrc: "/classes-ongoing-3.jpeg",
     description: "Focused classroom study environment in Ashok Rajpath, Patna."
   },
   {
-    id: 13,
+    id: 17,
     title: "Office & Counseling Zone",
     category: "classroom",
     imageSrc: "/office.jpg",
     description: "Admissions inquiry office and one-on-one student counseling cabin."
   },
   {
-    id: 14,
+    id: 18,
     title: "Student Batch 2022 - 2024",
     category: "batches",
     imageSrc: "/batch-students-2022-2024.jpeg",
     description: "Group photo of our graduated batch of Humanities toppers."
   },
   {
-    id: 15,
+    id: 19,
     title: "Student Batch 2024 - 2025",
     category: "batches",
     imageSrc: "/batch-students-2024-2025.jpeg",
     description: "Active Class 12 batch prepared for Board and CUET exams."
   },
   {
-    id: 16,
+    id: 20,
     title: "Student Batch 2024 - 2026",
     category: "batches",
     imageSrc: "/batch-students-2024-2026.jpeg",
     description: "Foundation Class 11 batch students under mentoring."
   },
   {
-    id: 17,
+    id: 21,
     title: "Annual Topper Celebration",
     category: "events",
     imageSrc: "/celebration-1.jpeg",
     description: "Cake-cutting ceremony and celebrations with students and Alok Sir."
   },
   {
-    id: 18,
+    id: 22,
     title: "Topper Felicitation Ceremony",
     category: "events",
     imageSrc: "/celebration-2.jpeg",
     description: "Group photograph of awardees during felicitation day."
   },
   {
-    id: 19,
+    id: 23,
     title: "Gifting Event - Trophies & Rewards",
     category: "events",
     imageSrc: "/gifting-1.jpeg",
     description: "Rewarding high scorers with study materials and trophies."
   },
   {
-    id: 20,
+    id: 24,
     title: "Student Reward Ceremony",
     category: "events",
     imageSrc: "/gifting-2.jpeg",
     description: "Alok Sir presenting a gift pack to a top Humanities scorer."
   },
   {
-    id: 21,
+    id: 25,
     title: "Student Reward Ceremony 2",
     category: "events",
     imageSrc: "/gifting-3.jpeg",
     description: "Encouraging junior batches to aim for 1st Division results."
   },
   {
-    id: 22,
+    id: 26,
     title: "Student Reward Ceremony 2",
     category: "events",
     imageSrc: "/gifting-4.jpeg",
     description: "Encouraging junior batches to aim for 1st Division results."
   },
   {
-    id: 23,
+    id: 27,
     title: "Syllabus Notes Distribution",
     category: "events",
     imageSrc: "/notes-distribution-1.jpeg",
     description: "Distributing printed chapter notes and board maps to the batch."
   },
+
   {
-    id: 24,
-    title: "Syllabus Notes Distribution",
-    category: "events",
-    imageSrc: "/notes-distribution-2.jpeg",
-    description: "Distributing printed chapter notes and board maps to the batch."
-  },
-  {
-    id: 24,
+    id: 28,
     title: "Banner & Poster Display",
     category: "banners",
     imageSrc: "/banner-1.jpeg",
     description: "Promotional banner of Shree Ram Classes displayed at Ashok Rajpath, Patna."
   },
   {
-    id: 24,
+    id: 29,
     title: "Banner & Poster Display",
     category: "banners",
     imageSrc: "/banner-2.jpeg",
     description: "Promotional banner of Shree Ram Classes displayed at Ashok Rajpath, Patna."
   },
   {
-    id: 24,
+    id: 30,
     title: "Banner & Poster Display",
     category: "banners",
     imageSrc: "/banner-3.jpeg",
