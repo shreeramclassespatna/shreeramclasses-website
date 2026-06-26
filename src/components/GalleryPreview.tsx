@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { ArrowRight, Camera } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight, Camera, Play, X } from "lucide-react";
 import { useState } from "react";
 
 interface PreviewImage {
@@ -48,11 +48,6 @@ const previewImages: PreviewImage[] = [
     title: "Reward Ceremony",
     label: "Events",
   },
-  {
-    src: "/achievers-1.jpeg",
-    title: "Achiever Felicitation",
-    label: "Achievements",
-  },
 ];
 
 function GalleryCard({ image, index }: { image: PreviewImage; index: number }) {
@@ -95,6 +90,118 @@ function GalleryCard({ image, index }: { image: PreviewImage; index: number }) {
   );
 }
 
+function VideoCard({ index }: { index: number }) {
+  const [tapped, setTapped] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handlePlayClick = () => {
+    setIsModalOpen(true);
+  };
+
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3, delay: index * 0.06 }}
+        className="group relative rounded-xl overflow-hidden shadow-sm border border-gray-200 cursor-pointer aspect-[16/10]"
+        onClick={() => setTapped((prev) => !prev)}
+      >
+        <div className="w-full h-full relative bg-black">
+          <video
+            src="/class-ongoing-video.mp4"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            controlsList="nodownload"
+          />
+        </div>
+
+        {/* Center Play Button */}
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={(e) => {
+            e.stopPropagation();
+            handlePlayClick();
+          }}
+          className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-black/60 via-black/30 to-black/60 transition-opacity duration-300 z-20"
+          aria-label="Play video"
+        >
+          <div className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-accent shadow-lg">
+            <Play className="h-6 w-6 sm:h-8 sm:w-8 text-primary fill-primary" />
+          </div>
+        </motion.button>
+
+        {/* Label overlay — visible on hover (desktop) or tap (mobile) */}
+        <div
+          className={`absolute top-0 left-0 right-0 bg-gradient-to-b from-primary/90 via-primary/30 to-transparent p-3 sm:p-4 transition-opacity duration-300 ${tapped ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+            }`}
+        >
+          <span className="font-inter font-bold text-[9px] sm:text-[10px] text-accent uppercase tracking-wider block mb-0.5">
+            Video
+          </span>
+          <h4 className="font-montserrat font-extrabold text-xs sm:text-sm text-white leading-tight">
+            Classroom Session
+          </h4>
+        </div>
+      </motion.div>
+
+      {/* Video Modal */}
+      <AnimatePresence>
+        {isModalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsModalOpen(false)}
+              className="absolute inset-0 bg-black/90 backdrop-blur-sm"
+            />
+
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ duration: 0.15 }}
+              className="bg-black border border-white/10 rounded-2xl w-full max-w-4xl shadow-2xl relative z-10 overflow-hidden"
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="absolute top-3 right-3 sm:top-4 sm:right-4 text-white hover:text-accent p-1 z-20 bg-black/50 hover:bg-black/80 rounded-full transition-all"
+                aria-label="Close video"
+              >
+                <X className="h-5 w-5 sm:h-6 sm:w-6" />
+              </button>
+
+              {/* Video Container */}
+              <div className="relative w-full bg-black aspect-video">
+                <video
+                  src="/class-ongoing-video.mp4"
+                  className="w-full h-full object-cover"
+                  controls
+                  controlsList="nodownload"
+                  autoPlay
+                />
+              </div>
+
+              {/* Video Info */}
+              <div className="bg-primary p-4 sm:p-6 text-left">
+                <h3 className="font-montserrat font-extrabold text-sm sm:text-base text-white mb-2">
+                  Classroom Session
+                </h3>
+                <p className="font-inter text-xs sm:text-sm text-gray-200 leading-relaxed">
+                  Experience our interactive teaching sessions at Shree Ram Classes. Watch our educators delivering engaging lessons with smartboard technology.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
+
 export default function GalleryPreview() {
   return (
     <section className="py-10 bg-white">
@@ -116,6 +223,9 @@ export default function GalleryPreview() {
           {previewImages.map((image, idx) => (
             <GalleryCard key={idx} image={image} index={idx} />
           ))}
+
+          {/* Video Card */}
+          <VideoCard index={previewImages.length} />
 
           {/* View All tile — fills the remaining grid slot */}
           <motion.div
