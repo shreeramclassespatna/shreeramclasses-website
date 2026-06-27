@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, Users, ShieldCheck, GraduationCap, Calendar } from "lucide-react";
+import { Phone, Users, ShieldCheck, GraduationCap, Calendar,Star } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -144,7 +144,7 @@ export default function Hero() {
     <div className="w-full rounded-xl border border-yellow-500/20 bg-yellow-500/10 backdrop-blur-sm px-4 py-3 flex items-center justify-between">
       <div className="flex items-center gap-3">
         <div className="bg-yellow-500/20 p-2 rounded-lg text-yellow-400">
-          <ShieldCheck className="h-5 w-5 fill-current" />
+          <Star className="h-5 w-5 fill-current" />
         </div>
 
         <div>
@@ -152,14 +152,14 @@ export default function Hero() {
             4.9/5 Student Rating
           </span>
           <span className="block font-inter text-xs text-gray-300">
-            Based on 600+ Student Reviews
+            Based on 500+ Student Reviews
           </span>
         </div>
       </div>
 
       <div className="flex items-center gap-1 text-yellow-400">
         {[...Array(5)].map((_, i) => (
-          <ShieldCheck key={i} className="h-4 w-4 fill-current" />
+          <Star key={i} className="h-4 w-4 fill-current" />
         ))}
       </div>
     </div>
