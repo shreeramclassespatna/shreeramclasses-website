@@ -152,7 +152,7 @@ export default function Hero() {
             4.9/5 Student Rating
           </span>
           <span className="block font-inter text-xs text-gray-300">
-            Based on 500+ Student Reviews
+            Based on 600+ Student Reviews
           </span>
         </div>
       </div>
