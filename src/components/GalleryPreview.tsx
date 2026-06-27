@@ -240,7 +240,7 @@ export default function GalleryPreview() {
               className="group relative rounded-xl overflow-hidden border border-primary/15 aspect-[16/10] flex flex-col items-center justify-center bg-gradient-to-br from-primary to-secondary text-white hover:shadow-lg transition-all duration-300 cursor-pointer h-full w-full"
             >
 
-              <span className="font-montserrat font-black text-sm sm:text-base">19+ Photos</span>
+              <span className="font-montserrat font-black text-sm sm:text-base">27+ Photos & Videos</span>
               <span className="font-inter text-[10px] sm:text-xs text-gray-300 mt-0.5">View Full Gallery</span>
               <div className="mt-2.5 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/10 border border-white/15 font-inter font-bold text-[10px] group-hover:bg-accent group-hover:text-primary group-hover:border-accent transition-all duration-200">
                 Explore
