@@ -69,18 +69,9 @@ export default function Courses() {
       },
       badge: "University Entrance",
       features: [
-        "History",
-        "Geography",
-        "Political Science",
-        "Economics",
-        "Sociology",
-        "Psychology",
-        "Home Science",
-        "Hindi (Book + Grammar)",
-        "English (Book + Grammar + spoken)",
-        "Grammar & Writing Skills",
-        "Weekly worksheets & tests",
-        "Handwritten notes & diagrams"
+       "language Paper",
+       "Domain Subjects",
+       "General Test",
 
       ],
       color: "border-secondary/20 hover:border-secondary",
