@@ -23,6 +23,7 @@ export default function Courses() {
         "Home Science",
         "Hindi (Book + Grammar)",
         "English (Book + Grammar + spoken)",
+        "Urdu",
         "CUET Preparation (Integrated)",
         "Grammar & Writing Skills",
         "Weekly worksheets & tests",
@@ -50,7 +51,7 @@ export default function Courses() {
         "Home Science",
         "Hindi (Book + Grammar)",
         "English (Book + Grammar + spoken)",
-        "Grammar & Writing Skills",
+        "Urdu",
         "CUET Preparation (Integrated)",
         "Weekly worksheets & tests",
         "Handwritten notes & diagrams"
