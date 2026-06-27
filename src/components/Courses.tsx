@@ -69,7 +69,7 @@ export default function Courses() {
       },
       badge: "University Entrance",
       features: [
-       "language Paper",
+       "Language Paper",
        "Domain Subjects",
        "General Test",
 
