@@ -13,6 +13,8 @@ import NewsTicker from "@/components/NewsTicker";
 import YoutubeSection from "@/components/Youtube";
 
 export default function Home() {
+  const web3FormsAccessKey = process.env.WEB3FORMS_ACCESS_KEY ?? "";
+
   return (
     <div className="relative min-h-screen bg-bg-brand text-brand-text flex flex-col justify-between">
       {/* Dynamic Navigation */}
@@ -29,7 +31,7 @@ export default function Home() {
         <YoutubeSection />
         <PageOverviews />
         <FAQ />
-        <AdmissionCTASection />
+        <AdmissionCTASection web3FormsAccessKey={web3FormsAccessKey} />
       </main>
 
       {/* Footer Details */}

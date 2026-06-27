@@ -10,7 +10,7 @@ const cspHeader = `
   base-uri 'self';
   form-action 'self';
   frame-src 'self' https://www.google.com https://www.google.com/maps/;
-  connect-src 'self' https://www.google-analytics.com;
+  connect-src 'self' https://www.google-analytics.com https://api.web3forms.com;
 `;
 
 const nextConfig: NextConfig = {

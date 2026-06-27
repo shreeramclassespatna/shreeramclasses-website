@@ -1,11 +1,15 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { submitLead, LeadInput } from "../app/actions";
 import { Phone, CheckCircle2, Send, MessageSquare, FileText, Check } from "lucide-react";
 import { motion } from "framer-motion";
+import { LeadInput, submitLeadToWeb3Forms } from "@/lib/web3forms";
 
-export default function AdmissionCTASection() {
+interface AdmissionCTASectionProps {
+  web3FormsAccessKey: string;
+}
+
+export default function AdmissionCTASection({ web3FormsAccessKey }: AdmissionCTASectionProps) {
   const [formData, setFormData] = useState<LeadInput>({
     name: "",
     phone: "",
@@ -48,7 +52,7 @@ export default function AdmissionCTASection() {
     if (!validateForm()) return;
 
     startTransition(async () => {
-      const result = await submitLead(formData);
+      const result = await submitLeadToWeb3Forms(formData, web3FormsAccessKey);
       if (result.success) {
         setSubmitResult({ success: true, message: result.message || "Demo class booked successfully!" });
         setFormData({ name: "", phone: "", className: "class12", message: "" });

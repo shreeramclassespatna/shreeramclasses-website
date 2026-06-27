@@ -1,10 +1,14 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { submitLead, LeadInput } from "../app/actions";
 import { MapPin, Phone, Clock, Mail, Send, CheckCircle2, MessageSquare } from "lucide-react";
+import { LeadInput, submitLeadToWeb3Forms } from "@/lib/web3forms";
 
-export default function Contact() {
+interface ContactProps {
+  web3FormsAccessKey: string;
+}
+
+export default function Contact({ web3FormsAccessKey }: ContactProps) {
   const [formData, setFormData] = useState<LeadInput>({
     name: "",
     phone: "",
@@ -47,7 +51,7 @@ export default function Contact() {
     if (!validateForm()) return;
 
     startTransition(async () => {
-      const result = await submitLead(formData);
+      const result = await submitLeadToWeb3Forms(formData, web3FormsAccessKey);
       if (result.success) {
         setSubmitResult({ success: true, message: result.message || "Demo class booked successfully!" });
         setFormData({ name: "", phone: "", className: "class12", message: "" });

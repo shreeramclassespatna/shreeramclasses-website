@@ -10,6 +10,8 @@ export const metadata = {
 };
 
 export default function ContactPage() {
+  const web3FormsAccessKey = process.env.WEB3FORMS_ACCESS_KEY ?? "";
+
   return (
     <div className="relative min-h-screen bg-bg-brand text-brand-text flex flex-col justify-between pt-16">
       <Navbar />
@@ -31,7 +33,7 @@ export default function ContactPage() {
         </section>
 
         {/* Contact details & form component */}
-        <Contact />
+        <Contact web3FormsAccessKey={web3FormsAccessKey} />
       </main>
 
       <Footer />
