@@ -102,7 +102,7 @@ export default function MeetAlokSir() {
               variants={itemVariants}
               className="border-l-4 border-accent pl-4 my-3 italic text-gray-200 font-inter font-medium text-sm bg-white/5 py-3 pr-3 rounded-r-xl border-y border-r border-white/5"
             >
-              &ldquo; Success is our tradition. accuracy.&rdquo;
+              &ldquo; Success is our tradition.&rdquo;
               <span className="block font-montserrat font-bold text-accent text-xs not-italic mt-2 tracking-wide">— Alok Kumar Singh</span>
             </motion.blockquote>
 
