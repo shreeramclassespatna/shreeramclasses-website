@@ -129,7 +129,7 @@ export default function Hero() {
                   <span className="block font-inter text-[10px] text-gray-400">Led by Alok Kumar Singh</span>
                 </div>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-1">
   <div className="bg-yellow-500/10 p-1.5 rounded-lg flex-shrink-0 text-yellow-400">
     <Star className="h-4 w-4 fill-current" />
   </div>
