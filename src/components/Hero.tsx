@@ -104,47 +104,65 @@ export default function Hero() {
                 Call Helpline
               </a>
             </motion.div>
-
-            {/* Trust Badges grid using verified info */}
-            <motion.div
-              variants={itemVariants}
-              className="grid grid-cols-2 gap-3 border-t border-white/10 pt-4 max-w-xl"
-            >
-              <div className="flex items-center space-x-2">
-                <div className="bg-accent/10 p-1.5 rounded-lg flex-shrink-0 text-accent">
-                  <GraduationCap className="h-4 w-4" />
-                </div>
-                <div>
-                  <span className="block font-montserrat font-bold text-xs sm:text-sm text-white">1st Division Guaranteed</span>
-                  <span className="block font-inter text-[10px] text-gray-400">Our primary academic mission</span>
-                </div>
-              </div>
-              
-                 <div className="flex items-center space-x-2">
-                <div className="bg-accent/10 p-1.5 rounded-lg flex-shrink-0 text-accent">
-                  <Calendar className="h-4 w-4" />
-                </div>
-                <div>
-                  <span className="block font-montserrat font-bold text-xs sm:text-sm text-white">Established in 2021</span>
-                  <span className="block font-inter text-[10px] text-gray-400">Led by Alok Kumar Singh</span>
-                </div>
-              </div>
-              <div className="flex items-center space-x-1">
-  <div className="bg-yellow-500/10 p-1.5 rounded-lg flex-shrink-0 text-yellow-400">
-    <Star className="h-4 w-4 fill-current" />
+{/* Trust Badges grid using verified info */}
+<motion.div
+  variants={itemVariants}
+  className="grid grid-cols-2 gap-3 border-t border-white/10 pt-4 max-w-xl"
+>
+  <div className="flex items-center space-x-2">
+    <div className="bg-accent/10 p-1.5 rounded-lg flex-shrink-0 text-accent">
+      <GraduationCap className="h-4 w-4" />
+    </div>
+    <div>
+      <span className="block font-montserrat font-bold text-xs sm:text-sm text-white">
+        1st Division Guaranteed
+      </span>
+      <span className="block font-inter text-[10px] text-gray-400">
+        Our primary academic mission
+      </span>
+    </div>
   </div>
 
-  <div>
-    <span className="block font-montserrat font-bold text-xs sm:text-sm text-white">
-      4.9/5 Student Rating
-    </span>
-    <span className="block font-inter text-[10px] text-gray-400">
-      Based on 500+ Reviews
-    </span>
+  <div className="flex items-center space-x-2">
+    <div className="bg-accent/10 p-1.5 rounded-lg flex-shrink-0 text-accent">
+      <Calendar className="h-4 w-4" />
+    </div>
+    <div>
+      <span className="block font-montserrat font-bold text-xs sm:text-sm text-white">
+        Established in 2021
+      </span>
+      <span className="block font-inter text-[10px] text-gray-400">
+        Led by Alok Kumar Singh
+      </span>
+    </div>
   </div>
-</div>
-            </motion.div>
-          </motion.div>
+
+  {/* Full Width Rating Box */}
+  <div className="col-span-2">
+    <div className="w-full rounded-xl border border-yellow-500/20 bg-yellow-500/10 backdrop-blur-sm px-4 py-3 flex items-center justify-between">
+      <div className="flex items-center gap-3">
+        <div className="bg-yellow-500/20 p-2 rounded-lg text-yellow-400">
+          <Star className="h-5 w-5 fill-current" />
+        </div>
+
+        <div>
+          <span className="block font-montserrat font-bold text-sm text-white">
+            4.9/5 Student Rating
+          </span>
+          <span className="block font-inter text-xs text-gray-300">
+            Based on 500+ Student Reviews
+          </span>
+        </div>
+      </div>
+
+      <div className="flex items-center gap-1 text-yellow-400">
+        {[...Array(5)].map((_, i) => (
+          <Star key={i} className="h-4 w-4 fill-current" />
+        ))}
+      </div>
+    </div>
+  </div>
+</motion.div>
 
           {/* Right Image Column */}
           <motion.div
