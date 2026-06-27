@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, Users, ShieldCheck, GraduationCap, Calendar } from "lucide-react";
+import { Phone, Users, ShieldCheck, GraduationCap, Calendar,Star } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -128,6 +128,29 @@ export default function Hero() {
                   <span className="block font-inter text-[10px] text-gray-400">Led by Alok Kumar Singh</span>
                 </div>
               </div>
+                 <div className="flex items-center space-x-2">
+                <div className="bg-accent/10 p-1.5 rounded-lg flex-shrink-0 text-accent">
+                  <Calendar className="h-4 w-4" />
+                </div>
+                <div>
+                  <span className="block font-montserrat font-bold text-xs sm:text-sm text-white">Established in 2021</span>
+                  <span className="block font-inter text-[10px] text-gray-400">Led by Alok Kumar Singh</span>
+                </div>
+              </div>
+              <div className="flex items-center space-x-2">
+  <div className="bg-yellow-500/10 p-1.5 rounded-lg flex-shrink-0 text-yellow-400">
+    <Star className="h-4 w-4 fill-current" />
+  </div>
+
+  <div>
+    <span className="block font-montserrat font-bold text-xs sm:text-sm text-white">
+      4.9/5 Student Rating
+    </span>
+    <span className="block font-inter text-[10px] text-gray-400">
+      Based on 500+ Reviews
+    </span>
+  </div>
+</div>
             </motion.div>
           </motion.div>
 
